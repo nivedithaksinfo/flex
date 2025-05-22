@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navigation .one {
+  height: 100px;
+  width: 100wh;
+  background-color: grey;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style-type: none;
+  padding: 2px;
+  position: relative;
+}
+.navigation .one li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.navigation .one li a:hover {
+  color: red;
+}
+.navigation .one li ul {
+  list-style-type: none;
+  background-color: grey;
+  margin-top: 3px;
+  visibility: hidden;
+}
+.navigation .one li ul li ul {
+  background-color: blue;
+  position: absolute;
+  margin-left: 60px;
+  display: none;
+}
+.navigation .one li ul li:hover ul {
+  display: block;
+}
+.navigation .one:hover ul {
+  visibility: visible;
+}/*# sourceMappingURL=flex1.css.map */

@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navigation {
+    .one {
+        height: 100px;
+        width: 100wh;
+        background-color: grey;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        list-style-type: none;
+        padding: 2px;
+        position: relative;
+
+        li {
+            
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                background-color: grey;
+                margin-top: 3px;
+                visibility: hidden;
+
+             li{
+              
+                ul{
+                    background-color: blue;
+                    position: absolute;
+                    margin-left:60px;
+                    display: none;
+                }
+                    &:hover{
+                        ul{
+                               display: block;
+                        }
+                       
+                    }
+                }
+             }
+
+            }
+
+
+
+            &:hover {
+                ul {
+                    visibility: visible;
+                }
+            }
+
+
+        }
+
+
+
+    }
+
+
